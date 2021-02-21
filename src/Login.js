@@ -30,7 +30,7 @@ const Login = () => {
   const onSuccessGithub = (response) => {
     console.log(response.code);
   } 
-  const uri='http://localhost:3000/search';
+  const uri='https://issues-trackers.herokuapp.com/search';
   const classes = useStyles();
   return (
     <div className="App" >
