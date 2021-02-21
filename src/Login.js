@@ -38,7 +38,7 @@ const Login = () => {
         <h1>Issue Tracker Login </h1>
         <br></br>
         <img
-          src={process.env.PUBLIC_URL + "github.png"} 
+          src={process.env.PUBLIC_URL + "/images/github.png"} 
             style={{width:'100px',height:'100px',borderRadius:'35%'}}
             alt="MercyJemosop" 
             className="Issue Tracker"

@@ -34,13 +34,11 @@ const Home = () => {
     <ApolloProvider client={client}>
   
       <div className={classes.body}>
-      <span className="input-group-btn">
-       <Link to="/login" >Click to login</Link>
-      </span>
+     
       <Typography variant={'h3'} className={classes.title}>   
      Issue Tracker <br></br>
      <img
-                        src={process.env.PUBLIC_URL + "github.png"} 
+                        src={process.env.PUBLIC_URL + "/images/github.png"} 
                           style={{width:'100px',height:'100px',borderRadius:'35%'}}
                           alt="MercyJemosop" 
                           className="Issue Tracker"
