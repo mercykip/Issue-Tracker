@@ -4,7 +4,7 @@ import {Typography, Container, makeStyles} from "@material-ui/core";
 import ReactLoginMS from "react-ms-login";
 
 import GitHubLogin from 'react-github-login';
-import "./App.css"
+import "./App.css";
 const useStyles = makeStyles({
   title: {
     marginTop: '1rem',

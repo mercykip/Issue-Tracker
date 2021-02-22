@@ -3,7 +3,7 @@ import {CircularProgress, List, Typography, makeStyles} from '@material-ui/core'
 import React from 'react';
 import Issue from "./Issue";
 import {GET_REPO_ISSUES} from './queries';
-
+import "./App.css";
 const useStyles = makeStyles({
   root: {
     flexDirection: 'column'
@@ -17,6 +17,9 @@ const useStyles = makeStyles({
  },
  issues1:{
   backgroundColor: '#d3d3d3'
+},
+issues2:{
+  backgroundColor: 'green'
 },
 hr:{
 color: 'white'
@@ -65,16 +68,19 @@ const IssueList = ({repoName, repoOwner}) => {
   return (
     <div className={classes.root}>
       <Typography variant={'h5'}>Latest issues: </Typography>
-      <select >
+      <select className="cselect" >
         <option value="Bug">Bug</option>
-        <option value="dependency">dependency</option>
+        <option value="Error">Error</option>
       </select>
       <List className={classes.issues1}>
         {data.repository.issues.nodes.map(issue => (
-          <Issue className={classes.issues1} title={issue.title}       bodyHTML={issue.bodyHTML} />
+          <Issue className={classes.issues1} title={issue.title}        />
 
         ))}<br/>
+        {data.repository.issues.nodes.map(issue => (
+          <Issue className={classes.issues2}       bodyHTML={issue.bodyHTML} />
 
+        ))}<br/>
       </List>
     </div>
   );
