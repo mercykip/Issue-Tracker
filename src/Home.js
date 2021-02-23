@@ -15,7 +15,7 @@ const useStyles = makeStyles({
   },
   body: {
 
-    width:"50%",
+    width:"70%",
     marginLeft: "auto",
     marginRight: "auto"
 

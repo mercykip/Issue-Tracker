@@ -7,7 +7,8 @@ const useStyles = makeStyles({
     marginTop: '1rem',
     marginBottom: '1rem',
     textAlign: 'center',
-    backgroundColor: 'white'
+    backgroundColor: 'white',
+    fontSize:'32px'
   }
 });
 
@@ -19,10 +20,10 @@ const Issue = ({title, bodyHTML}) => {
      <Container >
       <ListItem button onClick={() => setDialogOpened(true)} className={classes.title}>
         <ListItemText >{title}</ListItemText>
+        <button type="button">Description</button>
+     
       </ListItem>
-      {/* <ListItem className={classes.title}>
-        <ListItemText >{}</ListItemText>
-      </ListItem> */}
+    
       <Dialog maxWidth={'xl'} open={dialogOpened} onClose={() => setDialogOpened(false)}>
         <DialogContent>
           <div dangerouslySetInnerHTML={{__html: bodyHTML}}/>

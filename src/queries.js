@@ -27,6 +27,7 @@ export const GET_REPO_ISSUES = gql`
         repository(name: $name, owner: $owner) {
             issues(first: 20, states: [OPEN], orderBy: {field: CREATED_AT, direction: DESC}) {
                 nodes {
+                    id,
                     title,
                     bodyHTML,
                     createdAt

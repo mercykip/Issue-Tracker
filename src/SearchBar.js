@@ -10,6 +10,7 @@ const useStyles = makeStyles({
 
 const SearchBar = ({value, onChange}) => {
   const classes = useStyles();
+  
 // const simulateChangeOnInput = (wraper, inputSelector) 
   return (
     <TextField
@@ -27,7 +28,7 @@ const SearchBar = ({value, onChange}) => {
         ),
       }}
       value={value}
-      onChange={e =>onChange (e.target.value)}
+      onChange={e =>  onChange(e.target.value)}
     />
   );
 };
