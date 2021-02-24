@@ -2,8 +2,8 @@
   "name": "issue",
   "version": "0.1.0",
   "engine": {
-    "node": "12.15.0",
-    "npm": "6.14.7"
+    "node": "14.x",
+    "npm": "6.14.11"
   },
   "private": true,
   "dependencies": {
@@ -17,6 +17,8 @@
     "apollo-boost": "^0.4.9",
     "dotenv": "^8.2.0",
     "graphql": "^15.5.0",
+    "install": "^0.13.0",
+    "npm": "^7.5.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-github-login": "^1.0.3",
